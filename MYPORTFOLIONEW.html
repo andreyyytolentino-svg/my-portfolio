@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="Portfolio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+  <header>
+
+    <h1>Andrei</h1>
+
+    <nav class="navbar">
+
+      <a href="#home">Home</a>
+
+      <a href="#about">About</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#portfolio">Portfolio</a>
+
+      <a href="#contact">Contact</a>
+
+
+      <!-- DARK MODE BUTTON -->
+
+      <button id="darkModePlay">
+
+        <i class="fa-solid fa-moon"></i>
+
+      </button>
+
+    </nav>
+
+  </header>
+
+
+  <!-- =========================
+       HOME
+  ========================= -->
+
+  <section class="Home" id="home">
+
+    <p class="text">
+      UI/UX
+    </p>
+
+
+    <h2>
+
+      Welcome to
+
+      <span class="texting"> My Portfolio</span>
+       
+     
+
+    </h2>
+
+
+    <h3 class="type">
+      I'm Front-end Web Developer!
+    </h3>
+
+
+    <p class="second">
+      Hello! I'm Andrei Tolentino,
+      a passionate web developer.
+    </p>
+
+
+    <!-- SOCIAL ICONS -->
+
+    <div class="icons">
+
+      <i class="fa-brands fa-github"></i>
+
+      <i class="fa-brands fa-facebook"></i>
+
+      <i class="fa-brands fa-tiktok"></i>
+
+    </div>
+
+
+    <!-- BUTTONS -->
+
+    <footer class="btn">
+
+      <button class="jobbed">
+        Add me
+      </button>
+
+      <button class="job">
+        Hire me
+      </button>
+
+    </footer>
+
+
+    <!-- IMAGE -->
+
+    <div class="myimage">
+
+      <img
+        class="image"
+        src="ako.jpeg"
+        alt="Andrei"
+      >
+
+    </div>
+
+
+    <!-- ABOUT LINE -->
+
+    <div class="space">
+
+      <hr>
+
+      <span>
+        About me
+      </span>
+
+      <hr>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+     <div class="about-image">
+
+
+      <img class="imgAbout" src="ako.jpeg">
+    </div>
+ 
+
+    <div class="about-text">
+
+
+       <h4>About me</h4>
+
+
+       <p>Hi! I'm Andrei, an incoming BSIT student who loves learning
+      HTML, CSS, and JavaScript. My goal is to become a professional
+      web developer and create beautiful, responsive websites.
+       </p>
+
+      
+
+   
+
+   
+     
+     
+  
+
+
+
+
+
+
+  </section>
+
+   </div>
+     <div class="space2">
+
+      <hr>
+
+      <span>
+        Skills
+      </span>
+
+      <hr>
+
+    </div>
+
+
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    const darkModePlay =
+      document.querySelector("#darkModePlay");
+
+
+    darkModePlay.addEventListener("click", () => {
+
+      /* Toggle dark mode */
+
+      document.body.classList.toggle("dark-mode");
+
+
+      /* Change icon */
+
+      if (
+        document.body.classList.contains("dark-mode")
+      ) {
+
+        darkModePlay.innerHTML =
+          '<i class="fa-solid fa-sun"></i>';
+
+      } else {
+
+        darkModePlay.innerHTML =
+          '<i class="fa-solid fa-moon"></i>';
+
+      }
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>
