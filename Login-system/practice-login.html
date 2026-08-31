@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+* {
+ 
+  margin-top: -5px;
+  font-family: Arial;
+}
+
+
+body {
+ 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+  linear-gradient(#00ff66 2px, transparent 2px),
+  linear-gradient(90deg, #00ff66 2px, transparent 2px);
+  background-color: #242424;
+  background-size: 80px 80px;
+  
+
+}
+
+.container {
+background: linear-gradient(to right, black, gray);
+padding-left: 80px;
+padding-right: 80px;
+padding-bottom: 80px;
+padding-top: 70px ;
+border-radius: 10px;
+box-shadow: 0px 0px 10px #00ff66;
+ animation-name: myAnimation;
+  animation-duration: 4s;
+position: relative;
+ 
+ 
+
+
+
+}
+@keyframes myAnimation {
+  50% {transform: scale(1.2)}
+  
+}
+h1 {
+ text-align: center;
+ margin-bottom: 60px;
+ color:#00ff66;
+ font-size: 22px;
+
+}
+.edit {
+ display: flex;
+ flex-direction: column;
+
+
+
+}
+.container input {
+  margin-bottom: 30px;
+  padding: 10px 8px;
+  padding-right: 100px;
+  background-color: rgb(55, 52, 52);
+  border: 1px solid gray;
+  border-radius: 3px;
+  color: azure;
+  
+}
+.container .okay {
+  position: absolute;
+  color: Azure;
+  top: 155px;
+ font-size: 14px;
+ color: gray;
+ padding: 0 8px;
+ 
+  
+}
+.container input:focus + label {
+  top: 126px;
+  font-size: 12px;
+  transition: 0.3s;
+ 
+}
+.container .search {
+  position: absolute;
+  color: Azure;
+  top: 218px;
+ font-size: 14px;
+ color: gray;
+ padding: 0 8px;
+}
+.container .info-2:focus + .search {
+  top: 190px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+
+
+  
+
+
+
+.info-2 {
+  margin-bottom: 30px;
+  padding: 10px 8px;
+  padding-right: 100px;
+   background-color: rgb(55, 52, 52);
+  border: 1px solid gray;
+  border-radius: 3px;
+  
+}
+.first {
+  padding: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: linear-gradient(to right, yellow, orange);
+  border: none;
+  border-radius: 5px;
+ 
+  font-family: Arial;
+  font-weight: 700;
+
+}
+.first:hover {
+  background: linear-gradient(to right, orange, yellow);
+color: azure;
+}
+.first:active {
+  opacity: 0.5;
+
+}
+a{
+
+
+  display: inline-block;
+  margin-right: 60px;
+  font-size: 12px;
+  color:white;
+  text-decoration: none;
+
+
+  
+ 
+}
+a:hover {
+  text-decoration: underline;
+  color:#38ef7d ;
+  
+}
+.last-selection {
+  display: inline-block;
+  margin-left: 50px;
+ font-size: 15px;
+ color: white;
+ cursor: pointer;
+ 
+}
+.last-selection:hover {
+text-decoration: underline;
+color:#38ef7d;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column ;
+  background-color: #38ef7d;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  top: 5px;
+}
+
+ 
+
+
+.icon {
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 5px;
+  width: 118px;
+  background: linear-gradient(to right, black, gray);
+  box-shadow: 0px 0px 15px rgba(239, 169, 18);
+
+}
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  transition: background-color 1s ease;
+}
+.sidebar-link:hover {
+  background-color: rgb(239, 169, 18);
+}
+.sidebar-link svg {
+  margin-bottom: 10px;
+  
+}
+
+
+
+
+  </style>
+  
+
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+<body>
+
+ 
+
+
+
+
+
+
+  <div class="container">
+    
+    <h1>Login</h1>
+  
+  
+     <div class="edit">
+
+ <input type="text" >
+ <label class="okay">Email or Phone number</label>
+ <input class="info-2" type="text" >
+ <label class="search" > Password</label>
+
+<button class="first"> Log in</button>
+</div>
+
+
+ 
+  <a href="#Forget Password"> Forgot Password?</a>
+
+
+
+<span class="last-selection">Sign up</span>
+  
+   
+
+    <div class="variables">
+
+    
+
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+</body>
+</html>

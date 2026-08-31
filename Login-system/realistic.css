@@ -1,0 +1,180 @@
+* {
+  font-family: Arial;
+  
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+.container {
+  position: relative;
+   background: linear-gradient(gold);
+   padding-right: 75px ;
+   padding-left:70px ;
+   padding-bottom:80px;
+   padding-top: 60px;
+   border-radius: 8px;
+}
+.container h1 {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0.15);
+  margin-bottom: 0;
+  background: transparent;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 0;
+}
+.container p {
+  text-align: center;
+  
+  font-size: 11px;
+  font-family: Arial;
+  color: white;
+  margin-top: 5px;
+ 
+ 
+
+ 
+
+}
+.container .uno {
+  color: gray;
+  position: absolute;
+  font-size: 12px;
+  top: 125px;
+  margin-left: 5px;
+  transition: 2s;
+  
+}
+.container input {
+  color: Azure;
+}
+.container input:focus + .uno,
+.container input:valid + .uno {
+  font-size: 9px;
+  top: 110px;
+  left: 67px;
+  
+}
+.container .dos {
+  color: gray;
+  position: absolute;
+  font-size: 12px;
+  top: 165px;
+  margin-left: 5px;
+  transition: 2s;
+}
+.container input:focus + .dos,
+.container input:valid + .dos {
+  font-size: 9px;
+  top: 150px;
+  left: 67px;
+}
+.container .tres {
+  color: gray;
+  position: absolute;
+  font-size: 12px;
+  top: 205px;
+  margin-left: 5px;
+  transition: 2s;
+
+}
+.container input:focus + .tres,
+.container input:valid + .tres {
+  font-size: 9px;
+  top: 192px;
+  left: 67px;
+}
+.input-group input{
+display: flex;
+padding: 6px ;
+width: 100%;
+background-color: transparent;
+
+
+margin-bottom: 13px;
+margin-right: 60px;
+
+
+} 
+#text {
+  border-width:  0px 0px 1px 0px;
+  outline: none;
+}
+#Email {
+ border-width:  0px 0px 1px 0px;
+  outline: none;
+}
+#Password {
+   border-width:  0px 0px 1px 0px;
+  outline: none;
+
+}
+  
+ 
+
+
+ 
+
+.btn {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(to right, gold,rgb(255, 233, 105));
+  border: none;
+  border-radius: 5px;
+  color: rgb(73, 72, 72);
+  transition: 1s ease;
+
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgb(117, 117, 117);
+}
+.Register {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.oksige {
+  height: 1px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.5);
+   color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 12px;
+
+}
+.links a {
+border: 1px solid  rgba(255, 255, 255, 0.5);
+border-radius: 50%;
+padding: 12px 12px 12px 12px;
+
+ transition: 2s;
+ 
+}
+.links a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0.15);
+  background:  rgba(255, 255, 255, 0.5);;
+}
+.footer span {
+  color: rgb(130, 93, 0);
+  cursor: pointer;
+  margin-left: 5px;
+}
+.footer span:hover {
+  text-decoration: underline;
+}

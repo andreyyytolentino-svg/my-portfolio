@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+* {
+ 
+  margin-top: -5px;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+
+body {
+  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+ margin-left: 0px;
+
+
+}
+
+
+.container {
+background: linear-gradient(to right, white, transparent 3px);
+padding-left: 50px;
+padding-right: 70px;
+padding-bottom: 80px;
+padding-top: 70px ;
+border-radius: 10px;
+right: -10px;
+position: relative;
+
+
+ 
+  animation-name: myAnimation;
+  animation-duration: 4s;
+
+
+
+}
+@keyframes myAnimation {
+  30% {transform: scale(0.5);}
+  
+}
+h1 {
+ text-align: center;
+ margin-bottom: 60px;
+color: white;
+ font-size: 22px;
+
+ 
+
+}
+.edit {
+ display: flex;
+ flex-direction: column;
+ 
+
+
+
+}
+.container input {
+  margin-bottom: 30px;
+  padding: 10px 8px;
+  padding-right: 100px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  color: Azure;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 2s;
+
+}
+.container input:hover {
+  transform: scale(1.0);
+  box-shadow: 6px 6px 10px cyan;
+}
+.container input:active {
+
+}
+
+
+.container .okay {
+  position: absolute;
+  color:white;
+  top: 155px;
+ font-size: 14px;
+
+ padding: 0 8px;
+ 
+  
+}
+.container input:focus + label {
+  top: 126px;
+  font-size: 12px;
+  transition: 0.3s;
+ 
+}
+.container input:valid + label {
+  top: 130px;
+  font-size: 12px;
+  left: 43px;
+}
+.container .search {
+  position: absolute;
+  color: Azure;
+  top: 218px;
+ font-size: 14px;
+
+ padding: 0 8px;
+}
+.container .info-2:focus + .search {
+  top: 190px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+
+
+  
+
+
+
+.info-2 {
+  margin-bottom: 30px;
+  padding: 10px 8px;
+  padding-right: 100px;
+   background-color: rgb(55, 52, 52);
+  border: 1px solid gray;
+  border-radius: 3px;
+  
+  
+}
+.container .info-2:valid + .search {
+  top: 192px;
+  font-size: 12px;
+  left: 42px;
+}
+.first {
+  padding: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+  border: none;
+  border-radius: 5px;
+
+  font-family: Arial;
+  font-weight: 700;
+  transition: 2s;
+  
+
+}
+.first:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0.15);
+  
+}
+.first:active {
+  background: linear-gradient(to left, cyan, white);
+  
+}
+a{
+
+
+  display: inline-block;
+  margin-right: 60px;
+  font-size: 12px;
+  color:rgb(78, 76, 76);;
+  text-decoration: none;
+
+
+
+  
+ 
+}
+a:hover {
+  text-decoration: underline;
+  color:#38ef7d ;
+  
+}
+.last-selection {
+  display: inline-block;
+  margin-left: 50px;
+ font-size: 15px;
+ color: rgb(78, 76, 76);
+ cursor: pointer;
+ 
+}
+.last-selection:hover {
+text-decoration: underline;
+color:#38ef7d;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column ;
+  background-color: cyan;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  top: 5px;
+}
+
+ 
+
+
+.icon {
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 5px;
+  width: 118px;
+  background: linear-gradient(to right, black, gray);
+  box-shadow: 0px 0px 15px rgba(239, 169, 18);
+
+}
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  transition: background-color 1s ease;
+}
+.sidebar-link:hover {
+  background-color: rgb(239, 169, 18);
+}
+.sidebar-link svg {
+  margin-bottom: 10px;
+  
+}
+video {
+ width: 1480px;
+  height: 850px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: fixed;
+}
+
+
+
+
+  </style>
+  
+
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+<body>
+
+ 
+  <video autoplay muted loop>
+    <source src="animevideogirl.mp4">
+  </video>
+
+
+
+
+
+  <div class="container">
+    
+    <h1>Login</h1>
+  
+  
+     <div class="edit">
+
+ <input type="text" >
+ <label class="okay">Email or Phone number</label>
+ <input class="info-2" type="text" >
+ <label class="search" > Password</label>
+
+<button class="first"> Log in</button>
+</div>
+
+
+ 
+  <a href="#Forget Password"> Forgot Password?</a>
+
+
+
+<span class="last-selection">Sign up</span>
+  
+   
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

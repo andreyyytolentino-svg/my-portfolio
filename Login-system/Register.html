@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+
+  
+    
+  <style>
+    * {
+      font-family: Arial;
+     
+      
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, black, white);
+    }
+    .container {
+     background-color: rgb(32, 72, 72);
+     padding: 30px 40px;
+     border: 10px;
+     border-radius: 12px;
+     position: relative;
+    
+    }
+    .container 
+    .middle input {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 12px 7px;
+      border-radius: 8px;
+      border: none ;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+    .privacy input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 12px 5px;
+      padding-right: 170px;
+      border-radius: 8px;
+      border: none;
+      margin-left: 1px;
+
+       
+    } 
+    .footer  p{
+      color: white;
+     
+    }
+    .btn {
+      padding: 10px 133px;
+       border-radius: 8px;
+       background-color: forestgreen;
+       color: white;
+       font-weight: 500;
+    }
+    .last {
+      color: green;
+    }
+    .last:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      color: forestgreen;
+    }
+    p {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container .form1 {
+      position: absolute;
+      font-size: 14px;
+      color: gray;
+      left: 48px;
+      bottom: 290px;
+      transition: 1s;
+       
+    }
+    .container input:focus + .form1,
+    .container input:valid + .form1{
+      left: 50px;
+      font-size: 10px;
+      bottom: 305px;
+      color: black;
+     
+      
+    }
+    .container .form2 {
+      position: absolute;
+      font-size: 14px;
+      color: gray;
+      left: 210px;
+      bottom: 290px;
+      transition: 1s;
+    }
+    .container input:focus + .form2,
+    .container input:valid + .form2 {
+      left: 210px;
+      font-size: 10px;
+      bottom: 305px;
+      color: black;
+      outline: none;
+     
+
+    }
+    .container .uno {
+      position: absolute;
+      left: 48px;
+      top: 204px;
+      font-size: 15px;
+      color: gray;
+      transition: 1s ease;
+      pointer-events: none;
+      
+     
+    }
+    .container input:focus + .uno,
+    .container input:valid + .uno {
+      font-size: 10px;
+      top: 195px;
+      color: black;
+
+
+    }
+    .container .dos {
+      position: absolute;
+      left: 48px;
+      top: 253px;
+      font-size: 15px;
+      color: gray;
+       transition: 1s ease;
+
+      
+      
+    }
+    .container input:focus + .dos,
+    .container input:valid + .dos {
+      font-size: 10px;
+      top: 245px;
+      color: black;
+    }
+    .container .tres{
+      position: absolute;
+      font-size: 15px;
+      color: gray;
+      left: 48px;
+      top: 305px;
+      transition: 1s ease;
+    }
+     .container input:focus + .tres, 
+     .container input:valid + .tres {
+      font-size: 10px;
+      top:295px;
+      color: black;
+    }
+    .privacy i {
+      position: absolute;
+    top: 253px;
+    right: 58px;
+      cursor: pointer;
+      color: gray;
+      
+    }
+    
+    
+    
+   
+    
+
+  </style>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<body>
+    <div class="container">
+      <h1>Register Now</h1>
+      <p> Signup now and get full acces to our app.</p>
+      
+      <div class="middle">
+        <input type="text" required>
+        <label class="form1">Firstname</label>
+        
+       
+        <input type="text" required>
+       <label class="form2">Lastname</label>
+
+      </div>
+      
+      <div class="privacy">
+
+         <input type="text" required>
+         <label class="uno">Email</label>
+
+
+      <input type="password" required>
+        <label class="dos">Password</label>
+       
+        <i class="fa-solid fa-eye-slash"></i>
+
+      
+        <input type="password" required>
+      <label class="tres">Confirm password</label>
+        <i class="fa-solid fa-eye-slash hide"></i>
+
+      </div>
+     
+        <button class="btn">Submit</button>
+
+      <div class="footer">
+        <p>Already have an account ? <span class="last">Sign in</span> 
+        
+
+
+      </div>
+
+    
+
+      
+
+
+
+    </div>
+
+
+
+</body>
+</html>

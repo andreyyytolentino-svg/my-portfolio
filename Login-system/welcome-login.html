@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      color: white;
+    }
+    body {
+   
+     background: black;
+      font-family: Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100dvh;
+      
+    }
+    .new-input input {
+      display: flex;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+     background: transparent;
+      border: 1px solid white;
+    }
+    
+   
+   
+    
+    .container {
+      background-color: black;
+      padding: 100px;
+      height: 280px;
+      padding-right: 115px;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      transition: .3s ease;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+     
+      
+    
+     
+     
+      
+    }
+    .container:hover {
+      transform: translateY(-10px);
+       box-shadow: 0 0 10x White;
+       
+    }
+    .container h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .input-group {
+      position: relative;
+
+      
+      
+   
+      
+    }
+    .login-page {
+      min-height: 1000px;
+     
+      
+     
+    }
+    .input-group .uno {
+      position: absolute;
+      top: 10px ;
+      left: 10px;
+      transition: 0.3s ;
+      background: black;
+     transition: 0.3s;
+     font-size: 14px;
+    
+      
+      
+    }
+    .input-group .dos {
+      position: absolute;
+      top: 53px ;
+      left: 10px;
+      font-size: 14px;
+      background: black;
+      transition: 0.3s;
+      
+      
+      
+    }
+    .input-group input {
+      display: flex;
+      width: 100%;
+      padding: 8px;
+       margin-bottom: 10px;
+       background: transparent;
+       border: 1px solid #fff;
+       border-radius: 5px;
+     
+     
+    }
+    .input-group input:focus + .uno,
+    .input-group input:valid +  .uno {
+      
+      font-size: 10px;
+      transform: translateY(-15px);
+      
+
+    }
+    .input-group input:focus + .dos,
+    .input-group input:valid +  .dos {
+      
+      font-size: 10px;
+      transform: translateY(-15px);
+      
+
+    }
+    .showpassword {
+      display: flex;
+      gap: 6px;
+      margin-top: -15px;
+    }
+    .showpassword p {
+      font-size: 13px;
+    }
+    .btn {
+      display: block;
+      width: 108%;
+      margin-bottom: 20px;
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(
+    100deg,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet,
+    red
+   );
+      animation: rainbow 3s linear infinite;
+      background-size: 300%;
+    transition: .3s ease;
+    
+
+      
+    }
+    @keyframes rainbow {
+      to {
+    background-position: 0%;
+  }
+  from {
+    background-position: 300%;
+  }
+}
+.btn:hover {
+  transform: translateZ(-5px) scale(1.1);
+  
+} 
+
+.btn:active {
+
+  background: black;
+}
+h2 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  margin-bottom: 40px;
+
+}
+.new-input {
+  position: relative;
+  margin-bottom: 8px;
+}
+.new-input .input1 {
+  position: absolute;
+  top: 8px;
+  font-size: 13px;
+  left: 8px;
+  transition: .3s;
+  background: black;
+  
+}
+.new-input input:focus + .input1,
+.new-input input:valid + .input1 {
+  transform: translateY(-14px);
+  font-size: 10px;
+}
+.new-input .input2 {
+  position: absolute;
+  top: 52px;
+  font-size: 13px;
+  left: 8px;
+  transition: .3s;
+  background: black;
+}
+.new-input input:focus + .input2,
+.new-input input:valid + .input2 {
+  transform: translateY(-15px);
+  font-size: 10px;
+
+}
+.new-input .input3 {
+  position: absolute;
+  top: 95px;
+  font-size: 13px;
+  left: 8px;
+  transition: .3s;
+  background: black;
+}
+.new-input input:focus + .input3,
+.new-input input:valid + .input3 {
+  transform: translateY(-15px);
+  font-size: 10px;
+
+}
+.design {
+ text-decoration: none;
+ 
+}
+.design:hover {
+  text-decoration: underline;
+}
+p {
+text-align: center;
+}
+.design1 {
+ text-decoration: none;
+ cursor: pointer;
+ 
+}
+.design1:hover {
+  text-decoration: underline;
+}
+.passip {
+ position: absolute;
+ left: 145px;
+ top: 50px;
+ height: 15px;
+ 
+}
+#checkbox {
+  
+}
+.input-group input:invalid {
+  border: 1px solid red;
+}
+.input-group input:valid {
+  border: 1px solid green;
+}
+.error {
+  display: none;
+  color:red;
+  font-size: 12px;
+}
+.success {
+  display: none;
+  color: green;
+  font-size: 12px;
+}
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login System</title>
+</head>
+<body>
+  
+  <div class="container">
+    <main class="login-page" id="Login">
+
+      <h1>Login</h1>
+
+    <section class="input-group">
+
+      <input type="text" id="text" placeholder=" " required>
+      <label class="uno">Username</label>
+     
+
+      <input type="password" id="paswword" placeholder=" " required>
+      <label class="dos">Password</label>
+       
+      
+      <p class="error">Invalid email</p>
+       <p class="success">Valid email</p>
+
+
+    </section>
+
+    <div class="showpassword"><input type="checkbox" id="checkbox"><p> Remember me</p></div>
+
+
+      <button class="btn">Login</button>
+
+
+    <span> Don't have an account? <a href="#Sign Up" class="design1">Sign up</a></span>
+
+
+
+
+    </main>
+    
+
+    <main class="Sign Up" id="Sign Up">
+
+      
+
+    <h2>Sign Up</h2>
+
+
+    <section class="new-input">
+ 
+      <input type="email" id="text" required>
+      <label class="input1">Email</label>
+
+       <input type="password" id="text" required>
+      <label class="input2"> Password</label>
+
+      <input type="password" id="text" required>
+      <label class="input3">Confirm password</label>
+
+
+
+
+
+    </section>
+
+    <div class="showpassword"><input type="checkbox" id="checkbox"><p> Remember me</p></div>
+
+    <button class="btn">Login</button>
+
+
+    <p> Already have account? <a href="#Login" class="design">Login</a></p>
+
+
+
+
+
+
+
+    </main>
+
+    
+
+  </div>
+<script>
+  function gotoLogin () {
+    document.querySelector('#login').scrollintoView({
+
+      behavior: 'smooth'
+    });
+  
+  }
+
+
+
+</script>
+
+  
+</body>
+</html>
