@@ -705,18 +705,12 @@ position: relative;
     gap: 10px;
     align-items: center;
     min-height: 50vh;
-    width: 100%;
 }
 .space4 hr {
     flex: 1;
-    border: none;
-    border-top: 1px solid #405dbe;
+    border-top: 1px solid #0f1425;
+  border: none;
 
-}
-.space span {
-    font-family: Arial;
-    font-size: 17px;
-    color: #0a0c0e;
 }
 
 
