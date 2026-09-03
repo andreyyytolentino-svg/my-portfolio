@@ -19,14 +19,18 @@ This portfolio showcases my projects, skills, and information about me.
 - Home section
 - About section
 - Skills section
-- Projects section
+- Education section
 - Contact section
 - Dark mode
 
 
-## Other skills
+## My skills
 
 - Responsive Web Design
-- UI Design
-- Basic Web Accessibility
-- Website Layout and Styling
+- React
+- HTML
+- JavaScript
+- CSS
+- GitHub
+  
+  
