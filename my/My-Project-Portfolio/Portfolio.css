@@ -13,6 +13,16 @@ html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+.name {
+    color: #407bbe;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-right: 9px;
+
+  
+}
 
 body {
     background: #dfdfdf;
@@ -41,6 +51,12 @@ body {
     100% {
         background-position: 100%;
     }
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    height: 50px;
+    
 }
 
 
@@ -77,6 +93,8 @@ header {
 
 h1 {
     letter-spacing: 2px;
+    font-size: 24px;
+    margin-left: 15px;
     
 }
 
@@ -133,14 +151,17 @@ h1 {
 }
 
 .text {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     font-weight: 500;
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 h2 {
     font-size: 40px;
+    margin-top: 10px;
+
 }
 
 .second {
@@ -467,6 +488,9 @@ h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
 .skills-essay {
@@ -612,7 +636,65 @@ position: relative;
     color: #3e64ab;
     font-size: 17px;
 }
+.change {
+    color: rgb(171, 171, 215);
+}
+.Education {
+    padding: 100px 5%;
+  
 
+}
+
+.Education h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+}
+.Education .education-essay {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: rgb(96, 92, 92);
+    font-family: Arial;
+}
+.Education .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.card-content {
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #405dbe;
+}
+.Education h3 {
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+.Education h4 {
+    margin-bottom: 13px;
+}
+.Education .education-text {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Education small  {
+    margin-top: 20px;
+   font-size: 13px;
+}
+.Education .fa-graduation-cap  {
+    display: block;
+    margin-bottom: 10px;
+     
+}
+.Education .fa-school {
+     display: block;
+    margin-bottom: 10px;
+     
+}
 
 
 
@@ -740,9 +822,9 @@ body.dark-mode header {
 }
 
 body.dark-mode .about {
-    border-bottom: 1px solid red;
-    box-shadow: 0 0 8px white;
-    border-top: 1px solid red;
+    
+    
+    border: 1px solid rgb(167, 30, 30);
 }
 
 body.dark-mode .skills-card {
@@ -786,11 +868,31 @@ body.dark-mode .space2 span {
     color: rgb(255, 89, 89);
     font-size: 17px;
 }
+body.dark-mode .change {
+    color: rgb(255, 255, 255);
+}
 
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+
+    /* EDUCATION */
+
+  .card-grid {
+ grid-template-columns: repeat(2, 1fr);
+ gap: 20px;
+  }
+ 
+
+
+    .Education {
+        width: 100%;
+      margin: 0;
+    }
+    
+
+
 
     /* HEADER */
 
@@ -799,7 +901,9 @@ body.dark-mode .space2 span {
     }
 
     header h1 {
-        font-size: 25px;
+        font-size: 18px;
+        margin-left: 40px;
+
     }
 
     .navbar {
@@ -891,12 +995,40 @@ body.dark-mode .space2 span {
 
     .Skills h5 {
         font-size: 32px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+       
     }
+    .Skills .change {
+        color: rgb(105, 105, 216);
+    }
+    
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+}
+.space3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50vh;
+
+  
+    
+}
+.space3 hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #405dbe;
+}
+.space3 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #363535;
 }
 
 
@@ -905,8 +1037,21 @@ body.dark-mode .space2 span {
 @media (max-width: 600px) {
 
    
-    
+ .Education {
+padding: 70px 5%;
+ 
 
+    }
+   
+    .Education h2 {
+        font-size: 32px;
+    }
+
+    .education-essay {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
     .Skills h5 {
         font-size: 28px;
     }
@@ -919,6 +1064,38 @@ body.dark-mode .space2 span {
         margin-left: 10px;
         margin-right: 10px;
     }
+    header h1 {
+        display: none;
+    }
+    header {
+        padding: 15px 80px;
+    }
+    .Education .card-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .Education.card-content {
+        padding: 25px 20px;
+    }
+    .card-content > i {
+        font-size: 30px;
+    }
+    .card-content .year {
+        font-size: 20px;
+        line-height: 1.3
+        ;
+    }
+    .card-content h4 {
+        font-size: 15px;
+    }
+    .education-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .card-content small {
+        font-size: 12px;
+    }
+   
   
     
 
@@ -927,10 +1104,13 @@ body.dark-mode .space2 span {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 280px) {
 
     /* HEADER */
 
+     .card-grid {
+        grid-template-columns: 1fr;
+    }
     header {
         flex-direction: column;
         gap: 15px;
@@ -1044,6 +1224,8 @@ body.dark-mode .space2 span {
         margin: 0;
         padding: 25px 20px;
     }
-
+    header h1 {
+        display: none;
+    }
 }
 
