@@ -1353,7 +1353,7 @@ padding: 70px 5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 6px;
     }
 
     .navbar a {
@@ -1461,7 +1461,7 @@ padding: 70px 5%;
     }
     .navbar {
          margin-left: 35px;
-         margin-right: 0;
+         
  
     }
        
