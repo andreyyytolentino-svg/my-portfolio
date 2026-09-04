@@ -15,7 +15,6 @@ This is my first personal portfolio website.
 This portfolio showcases my projects, skills, and information about me.
 
 ## Features
-
 - Home section
 - About section
 - Skills section

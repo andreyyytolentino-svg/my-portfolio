@@ -32,15 +32,7 @@ body {
     position: relative;
     animation: rainbow 3s linear infinite;
     background: linear-gradient(
-        140deg,
-        white,
-        #7e96e3,
-        white,
-        #7e96e3,
-        white,
-        #7e96e3,
-        white
-       
+    
     );
     background-size: 300%;
     
@@ -77,7 +69,7 @@ header {
 
     z-index: 3;
 
-    padding: 10px 60px;
+    padding: 5px 60px;
     
 
     border-radius: 5px;
@@ -722,6 +714,85 @@ position: relative;
     font-size: 17px;
     color: #0a0c0e;
 }
+.Contact {
+    border-top: 1px solid #407bbe;
+    border-bottom: 1px solid #407bbe;
+    min-height: 80vh;
+}
+.Contact input {
+    padding: 10px;
+    width: 30%;
+}
+.Contact .container {
+    text-align: center;
+}
+.Contact h1 {
+  margin-bottom: 50px ;
+  margin-top: 80px;
+}
+.input-group,
+ .input2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+   margin-bottom: 20px;
+}
+.input-box {
+    position: relative;
+     flex: 1;
+    
+}
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #407bbe;
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+   
+
+}
+
+.input-box label {
+    position: absolute;
+    left: 12px;
+    top: 20px;
+    transform: translateY(-50%);
+    font-size: 13px ;
+    font-family: Arial;
+    pointer-events: none;
+}
+.input-box input:focus + label,
+.input-box input:valid + label {
+    left: 12px;
+    transform: translateY(-26px);
+    transition: .4s ease;
+    font-size: 11px;
+    background: #dfdfdf;
+}
+.input3 input {
+    padding: 100px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.btn {
+width: 100%;
+height: 40px;
+border-radius: 8px;
+border: none;
+color: white;
+background: #3e64ab;
+font-weight: bold;
+font-family: Arial;
+}
+.js-button {
+    flex: 1;
+}
+
 
 
 
@@ -902,7 +973,7 @@ body.dark-mode .change {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     /* EDUCATION */
 
@@ -976,8 +1047,7 @@ body.dark-mode .change {
     /* IMAGE */
 
     .myimage {
-        width: 80%;
-        height: auto;
+        
         margin: 30px auto 0;
     }
 
@@ -985,13 +1055,13 @@ body.dark-mode .change {
         position: relative;
 
         right: 10px;
-        top: auto;
+        
 
         width: 100%;
         height: auto;
 
         
-        margin-top: 20px;
+        margin-top: 10rem;
     }
 
 
@@ -1261,6 +1331,7 @@ padding: 70px 5%;
     .navbar {
          margin-left: 35px;
          margin-right: 0;
+ 
     }
        
     
