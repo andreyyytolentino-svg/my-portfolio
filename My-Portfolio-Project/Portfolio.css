@@ -31,20 +31,7 @@ body {
     color: #405dbe;
     min-height: 100vh;
     position: relative;
-    animation: rainbow 3s linear infinite;
-    background: linear-gradient(
-    
-    );
-    background-size: 300%;
-    
-}
-@keyframes rainbow {
-    0% {
-        backfround-position: 0;
-    }
-    100% {
-        background-position: 100%;
-    }
+  
 }
 .logo {
     position: absolute;
@@ -412,7 +399,8 @@ h2 {
 
     gap: 50px;
 
-    border: 1px solid #405dbe;
+    border-top: 1px solid #405dbe;
+    border-bottom: 1px solid #405dbe;
     padding: 50px;
     
 }
@@ -1055,7 +1043,8 @@ body.dark-mode .about .container{
     
    margin: 0;
    padding: auto;
-    border: 1px solid rgb(167, 30, 30);
+    border-top: 1px solid rgb(167, 30, 30);
+    border-bottom: 1px solid rgb(167, 30, 30);
 }
 body.dark-mode .about h4 {
     color: rgb(191, 64, 64);
@@ -1343,7 +1332,7 @@ padding: 70px 5%;
 
 
 
-@media (max-width: 280px) {
+@media (max-width: 480px) {
 
     /* HEADER */
 
